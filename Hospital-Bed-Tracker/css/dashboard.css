@@ -1,0 +1,42 @@
+.updated { background: white; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; color: #657d85; }
+.dashboard-banner {
+  min-height: 260px;
+  margin-bottom: 24px;
+  padding: 28px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 14px;
+  background:
+    linear-gradient(rgba(18, 60, 80, 0.12), rgba(18, 60, 80, 0.72)),
+    url("../assets/lpu-hospital.png") center 45% / cover no-repeat;
+  box-shadow: 0 8px 22px rgba(30,87,99,0.12);
+}
+.dashboard-banner .page-heading {
+  width: 100%;
+  margin: 0;
+  color: white;
+}
+.dashboard-banner .eyebrow { color: #b9eeea; }
+.dashboard-banner h1 { color: white; }
+.dashboard-banner .updated { border: 0; background: rgba(255,255,255,0.92); }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 26px; }
+.summary-card { padding: 22px; background: var(--dark); color: white; border-radius: 14px; }
+.summary-card span { display: block; }
+.summary-card strong { display: block; font-size: 38px; margin: 8px 0; }
+.summary-card small { color: #bcd7de; }
+.bed-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.bed-card { background: white; border: 1px solid var(--line); border-radius: 14px; padding: 22px; box-shadow: 0 8px 22px rgba(30,87,99,0.07); }
+.bed-card-head { display: flex; justify-content: space-between; align-items: center; }
+.bed-card h2 { margin: 0; font-size: 20px; }
+.status { padding: 7px 10px; border-radius: 20px; color: white; font-size: 12px; font-weight: bold; }
+.status-green { background: #16866d; }.status-yellow { background: #c68a18; }.status-red { background: #c84b4b; }
+.bed-numbers { display: grid; grid-template-columns: repeat(3, 1fr); margin: 20px 0; text-align: center; }
+.bed-numbers div { border-right: 1px solid var(--line); }.bed-numbers div:last-child { border: 0; }
+.bed-numbers strong { display: block; font-size: 25px; }.bed-numbers span { color: #71888f; font-size: 13px; }
+.progress { height: 10px; background: #e7eff0; border-radius: 20px; overflow: hidden; }
+.progress div { height: 100%; border-radius: 20px; background: var(--teal); }
+@media (max-width: 700px) {
+  .dashboard-banner { min-height: 220px; padding: 20px; align-items: flex-end; }
+  .summary-grid { grid-template-columns: 1fr; }
+  .bed-grid { grid-template-columns: 1fr; }
+}

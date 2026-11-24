@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Admin - City Care Hospital</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span><strong>City Care Hospital</strong><small>Demo Hospital</small></span></a>
+    <nav>
+      <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="stock.html">Bed Stock</a><a href="contact.html">Contact</a><a class="active nav-admin" href="admin.html">Admin Login</a>
+    </nav>
+  </header>
+  <main class="page admin-page">
+    <section id="loginSection" class="login-card">
+      <p class="eyebrow">Classroom demonstration</p>
+      <h1>Demo Admin Login</h1>
+      <p class="warning">This is not secure authentication. Frontend login does not protect real hospital data.</p>
+      <form id="loginForm">
+        <label for="username">Username</label><input id="username" type="text" autocomplete="username" required>
+        <label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required>
+        <p id="loginMessage" class="form-message"></p>
+        <button class="button" type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="adminSection" class="admin-panel" hidden>
+      <div class="page-heading"><div><p class="eyebrow">Bed management</p><h1>Admin Dashboard</h1></div><button id="logoutButton" class="secondary-button" type="button">Logout</button></div>
+      <p class="warning">Changes are stored in browser localStorage only and are not sent to a server or shared database.</p>
+      <form id="stockForm">
+        <div id="adminRows" class="admin-grid"></div>
+        <p id="adminMessage" class="form-message"></p>
+        <button class="button" type="submit">Save Changes</button>
+        <button id="resetButton" class="danger-button" type="button">Reset Demo Data</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>City Care Hospital (Demo Hospital)</p><p>Academic demonstration project - Not for real medical decisions</p></footer>
+  <script src="../js/data.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

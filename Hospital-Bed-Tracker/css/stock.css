@@ -1,0 +1,6 @@
+.table-wrap { overflow-x: auto; background: white; border: 1px solid var(--line); border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; min-width: 620px; }
+th, td { padding: 16px; text-align: left; border-bottom: 1px solid var(--line); }
+th { background: #edf7f7; color: var(--dark); }
+.stock-summary { display: flex; gap: 15px; margin-top: 18px; flex-wrap: wrap; }
+.stock-summary span { background: white; border: 1px solid var(--line); border-radius: 8px; padding: 12px 15px; }

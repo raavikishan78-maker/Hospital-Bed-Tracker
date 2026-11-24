@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Stock - City Care Hospital</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/stock.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span><strong>City Care Hospital</strong><small>Demo Hospital</small></span></a>
+    <nav>
+      <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a class="active" href="stock.html">Bed Stock</a><a href="contact.html">Contact</a><a href="admin.html" class="nav-admin">Admin Login</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="page-heading"><div><p class="eyebrow">Inventory overview</p><h1>Bed Stock Status</h1></div></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Bed Type</th><th>Total</th><th>Occupied</th><th>Available</th><th>Status</th></tr></thead>
+        <tbody id="stockTable"></tbody>
+      </table>
+    </div>
+    <div class="stock-summary" id="stockSummary"></div>
+  </main>
+  <footer><p>City Care Hospital (Demo Hospital)</p><p>Academic demonstration project - Not for real medical decisions</p></footer>
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

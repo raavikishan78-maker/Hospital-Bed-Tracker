@@ -1,0 +1,20 @@
+.admin-page { max-width: 1000px; }
+.login-card { max-width: 470px; margin: 20px auto 50px; background: white; border: 1px solid var(--line); border-radius: 16px; padding: 30px; box-shadow: 0 10px 30px rgba(30,87,99,0.09); }
+.login-card h1 { margin-top: 5px; }
+.login-card form { display: grid; gap: 9px; }
+label { font-weight: bold; margin-top: 8px; }
+input { width: 100%; padding: 12px; border: 1px solid #b9cfd4; border-radius: 8px; font-size: 16px; }
+.form-message { min-height: 21px; color: var(--red); font-weight: bold; }
+.admin-panel { width: 100%; }
+.admin-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.admin-row { background: white; border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.admin-row h3 { margin: 0 0 12px; color: var(--dark); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.calculated { margin: 12px 0 0; color: #607a82; }
+.secondary-button { background: #dcebed; color: var(--dark); }
+.danger-button { background: #b94b4b; margin-left: 8px; }
+.secondary-button:hover { background: #cadfde; }.danger-button:hover { background: #9f3a3a; }
+@media (max-width: 700px) {
+  .admin-grid, .field-row { grid-template-columns: 1fr; }
+  .danger-button { margin: 10px 0 0; }
+}

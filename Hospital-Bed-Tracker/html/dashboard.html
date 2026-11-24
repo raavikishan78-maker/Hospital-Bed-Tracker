@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Dashboard - City Care Hospital</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html"><span class="brand-mark">+</span><span><strong>City Care Hospital</strong><small>Demo Hospital</small></span></a>
+    <nav>
+      <a href="index.html">Home</a><a class="active" href="dashboard.html">Dashboard</a><a href="stock.html">Bed Stock</a><a href="contact.html">Contact</a><a href="admin.html" class="nav-admin">Admin Login</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="dashboard-banner">
+      <div class="page-heading">
+        <div><p class="eyebrow">Hospital overview</p><h1>Bed Availability Dashboard</h1></div>
+        <span id="updatedTime" class="updated"></span>
+      </div>
+    </div>
+
+    <div class="summary-grid">
+      <article class="summary-card"><span>Available Beds</span><strong id="availableBeds">0</strong><small>Excludes ventilators</small></article>
+      <article class="summary-card"><span>Occupied Beds</span><strong id="occupiedBeds">0</strong><small>Excludes ventilators</small></article>
+      <article class="summary-card"><span>Available Ventilators</span><strong id="availableVentilators">0</strong><small>Critical care equipment</small></article>
+    </div>
+
+    <div class="bed-grid" id="dashboardCards"></div>
+  </main>
+  <footer><p>City Care Hospital (Demo Hospital)</p><p>Academic demonstration project - Not for real medical decisions</p></footer>
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
